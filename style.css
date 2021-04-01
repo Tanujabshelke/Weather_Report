@@ -1,0 +1,70 @@
+*, 
+::after ,
+ ::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .container{
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(rgb(7, 195, 241),rgb(3, 63, 78));
+     color: #ddd;
+     font-family: 'Concert One', cursive;
+     font-size: 1.5em;
+ }
+
+ .temp,
+ .location {
+     height: 30vh;
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     line-height: 1.8;
+     max-width: 800px;
+     
+
+ }
+
+.location{
+    flex-direction: column;
+}
+
+ .temp{
+     flex-direction: column;
+ }
+ 
+ .temp--primary {
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     font-size: 1.5rem;
+ }
+
+ .temp--primary span{
+     font-size: 2rem;
+     margin: .5rem;
+ }
+
+ .myicon {
+     width:100%;
+     height:auto;
+    
+ }
+
+@media(min-width:900px){
+    .location,
+    .temp{
+        max-width: 700px; 
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.2em;
+     }
+
+}
